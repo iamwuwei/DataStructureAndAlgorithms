@@ -21,7 +21,7 @@ const code = ['for (let i = 0; i < array.length; i++) {',
 '}']
 const BubbleSortView = () => {
     const [status, setStatus] = useState(Status.START)
-    const bubbleSort = BubbleSort(testArray, status, setStatus, 100)
+    const bubbleSort = BubbleSort(testArray, status, setStatus, 500)
 
     return (
         <Layout sort={bubbleSort} status={status} setStatus={setStatus}>

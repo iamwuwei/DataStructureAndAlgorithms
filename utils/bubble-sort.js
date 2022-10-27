@@ -52,7 +52,7 @@ const bubbleSort = async (info, setInfo, speed) => {
             if (sortArray[j] > sortArray[j+1]) {
                 setInfo({...info, array: sortArray, comparisonCount: ++comparisonCount, selectedIndex: [j, j+1], swapIndex: j})
                 await sleep(speed)
-                let buf = sortArray[j]
+                const buf = sortArray[j]
                 sortArray[j] = sortArray[j+1]
                 sortArray[j+1] = buf
                 setInfo({...info, array: sortArray, comparisonCount: comparisonCount, selectedIndex: [j, j+1]})
