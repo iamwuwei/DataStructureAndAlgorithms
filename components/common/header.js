@@ -6,7 +6,7 @@ const Header = () => {
             <nav>
                 <Link href="/">
                     <a>
-                        <img src="wei.png" />
+                        <img src="../wei.png" />
                         <h1>データ構造とアルゴリズム</h1>
                     </a>
                 </Link>
