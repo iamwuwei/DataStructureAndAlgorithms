@@ -1,0 +1,26 @@
+.container {
+    height: 100%;
+    width: 8%;
+    display: flex;
+    align-items: flex-end;
+}
+.selected {
+    background-color: rgba(128, 128, 128, 0.112);
+}
+.swap {
+    background-color: skyblue;
+}
+.bar{
+    width: 100%;
+    background-color: red;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    &:before {
+        content: attr(data-value);
+        color: black;
+        position: relative;
+        top: -20px;
+        font-size: small;
+    }
+}
