@@ -1,10 +1,23 @@
 import Link from 'next/link'
 import styles from '../../styles/common/header.module.scss'
-const Header = () => {
+import { useLayoutEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { selectHomePageUrl, setUrl } from '../../slices/urlSlice'
+
+const Header = ({ url }) => {
+    const dispatch = useDispatch()
+
+    const homePageUrl = useSelector(selectHomePageUrl)
+
+    // useLayoutEffect(() => {
+    //     dispatch(setUrl(url))
+    // },[url])
+
     return (
         <header className={styles.header}>
             <nav>
-                <Link href="/">
+                <Link href={homePageUrl}>
                     <a>
                         <img src="../wei.png" />
                         <h1>データ構造とアルゴリズム</h1>
@@ -16,3 +29,11 @@ const Header = () => {
 }
 
 export default Header
+
+export async function getServerSide() {
+    const url = {
+      "homePage":process.env.MY_HOME_PAGE_URL,
+    }
+  
+    return { props: { url } }
+  }
