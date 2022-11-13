@@ -1,8 +1,5 @@
 .container {
     display: flex;
-    p {
-        a{
-            margin: 0 5px;
-        }
-    }
+    align-items: center;
+    padding: 2px;
 }

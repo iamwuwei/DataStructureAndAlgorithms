@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Head from 'next/head'
 import Layout from "./layout"
 import Description from "../utils/description"
 import CodeBlock from "../utils/code-block"
 
 import { BubbleSort } from '../../utils/bubble-sort'
-import { Sorts } from '../../constants/sort'
 import { Status } from '../../constants/status'
 
 const BubbleSortView = () => {
