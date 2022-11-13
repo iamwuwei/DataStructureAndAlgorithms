@@ -5,10 +5,9 @@ import Sidebar from './sidebar'
 
 const Layout = ({ children }) => {
   return (
-    <div style={{height:'100vh'}}>
+    <div style={{ height:'100vh' }}>
       <Header />
       <div className={styles.container}>
-        <Sidebar />
         <main className={styles.main}>{children}</main>
       </div>
     </div>

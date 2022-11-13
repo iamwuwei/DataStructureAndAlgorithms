@@ -19,7 +19,7 @@ const Header = ({ url }) => {
             <nav>
                 <Link href={homePageUrl}>
                     <a>
-                        <img src="../wei.png" />
+                        <img src="../wei.png" alt="Wu Wei"/>
                         <h1>データ構造とアルゴリズム</h1>
                     </a>
                 </Link>

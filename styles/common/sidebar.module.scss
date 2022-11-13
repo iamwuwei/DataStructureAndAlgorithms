@@ -1,5 +1,7 @@
 .container {
-    min-width: 250px;
+    width: 250px;
+    padding: 30px 0 30px 50px;
+    background-color: var(--color-sub);
     h1 {
         font-size: 1.3rem;
     }

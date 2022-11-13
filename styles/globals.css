@@ -1,11 +1,11 @@
 @import 'destyle.css';
 
 :root {
-  --color-bg-primary: rgb(238, 242, 242);
+  --color-sub: rgb(238, 242, 242);
   --color-font-primary: black;
 }
 
 body {
-  background-color: var(--color-bg-primary);
+  background-color: white;
   font-family: 'Noto Sans JP', sans-serif;
 }
