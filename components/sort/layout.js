@@ -6,7 +6,6 @@ import Sidebar from '../common/sidebar'
 import PageIndex from '../utils/page-index'
 
 const Layout = ({ children, sort, status, setStatus }) => {
-
     return (
         <div className={styles.container}>
             <Sidebar />

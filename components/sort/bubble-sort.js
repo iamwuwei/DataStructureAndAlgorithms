@@ -28,7 +28,7 @@ const BubbleSortView = () => {
     return (
         <Layout sort={bubbleSort} status={status} setStatus={setStatus}>
             <Head>
-                <title>Welcome to my learning </title>
+                <title>bubble sort バブルソート</title>
                 <meta name="description" content="Bubble Sort バブルソート" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Welcome to my learning </title>
-        <meta name="description" content="Data Structure and Algorithm Note" />
+        <meta name="description" content="Note of Data Structure and Algorithm" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className={styles.title}>
@@ -18,7 +18,7 @@ export default function Home() {
         <Link href="sort">
           <a className={styles.btn}>
               <div className={styles.anime}>
-                <Image src="/bar.png" width={100} height={100} layout="fill"></Image>
+                <Image src="/bar.png" layout="fill"></Image>
               </div>
               <h2>
                 ソート

@@ -23,7 +23,7 @@ const PageIndex = () => {
         <h1 className={styles.container}>
             {
                 paths.map((path, index) => (
-                    <p>
+                    <p key={index}>
                         <Link href={path ? path : '/'}><a>{ path ? index == paths.length-1 ? getTitle() : path : 'home' }</a></Link>
                         {
                             index < paths.length-1 ? '/' : '' 
