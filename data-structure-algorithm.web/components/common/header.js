@@ -32,7 +32,7 @@ export default Header
 
 export async function getServerSide() {
     const url = {
-      "homePage":process.env.MY_HOME_PAGE_URL,
+      "homePage":process.env.HOST,
     }
   
     return { props: { url } }
