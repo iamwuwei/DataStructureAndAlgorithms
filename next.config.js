@@ -7,6 +7,9 @@ const nextConfig = {
     defaultLocale: "ja",
     localeDetection: true,
   },
+  env: {
+    HOST:'http://www.iamwuwei.com'
+  }
 }
 
 module.exports = nextConfig
