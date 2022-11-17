@@ -64,12 +64,12 @@ const selectionSort = async (info, setInfo, speed) => {
 
         if (min != i) {
             let temp = sortArray[i]
-            setInfo({...info, swapIndex: i, minimumIndex:min})
+            setInfo({...info, comparisonCount: comparisonCount, swapIndex: i, minimumIndex:min})
             await sleep(speed)
             sortArray[i] = sortArray[min]
             sortArray[min] = temp
             await sleep(speed)
-            setInfo({...info, array: sortArray, swapIndex: min, minimumIndex:i})
+            setInfo({...info, comparisonCount: comparisonCount, array: sortArray, swapIndex: min, minimumIndex:i})
             await sleep(speed)
         }
     }
