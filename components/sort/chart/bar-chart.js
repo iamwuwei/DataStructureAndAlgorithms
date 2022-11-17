@@ -5,7 +5,7 @@ import Bar from './bar'
 
 const BarChart = ({data}) => {
     const bars = data.array.map( (value, index) => 
-        <Bar key={index} value={value} index={index} selectedIndex={data.selectedIndex} swapIndex={data.swapIndex}/>
+        <Bar key={index} value={value} index={index} data={data}/>
     )
     return (
         <div className={styles.container}>

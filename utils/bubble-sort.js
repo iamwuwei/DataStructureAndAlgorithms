@@ -10,7 +10,8 @@ export const BubbleSort = (array, status, setStatus, speed) => {
             "state": status,
             "comparisonCount": 0,
             "selectedIndex": [], 
-            "swapIndex":null 
+            "swapIndex":null, 
+            "minimumIndex": null
         }
     )
 

@@ -1,7 +1,6 @@
 import styles from '../../styles/sort/control-panel.module.scss'
 
 import { Status } from '../../constants/status'
-import { render } from 'react-dom'
 
 const ControlPanel = ({status, setStatus, count}) => {
     const switchStatus = () => {

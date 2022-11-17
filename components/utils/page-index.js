@@ -4,6 +4,7 @@ import Link from 'next/link'
 import styles from '../../styles/utils/page-index.module.scss'
 
 import { Sorts } from '../../constants/sort'
+import Sort from '../../pages/sort/[sort]'
 
 const PageIndex = () => {
     const router = useRouter()
@@ -14,6 +15,8 @@ const PageIndex = () => {
         switch(sort) {
             case Sorts.BUBBLE_SORT:
                 return "バブルソート"
+            case Sorts.SELECTION_SORT:
+                return "選択ソート"
             default:
                 return ''
         }

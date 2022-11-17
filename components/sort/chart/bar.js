@@ -1,25 +1,31 @@
 import styles from '../../../styles/sort/bar.module.scss'
 
-const Bar = ({value, index, selectedIndex, swapIndex}) => {
+const Bar = ({value, index, data}) => {
     const isSelected = () => {
-        if (selectedIndex.length > 0) {
-            for (let i = 0; i < selectedIndex.length; i++) {
-                if (index == selectedIndex[i]) {
-                    return true
+        if(data.minimumIndex == index) {
+            return styles.minimum
+        }
+        if (data.selectedIndex.length > 0) {
+            for (let i = 0; i < data.selectedIndex.length; i++) {
+                if (index == data.selectedIndex[i]) {
+                    return styles.selected
                 }
             }
         }
         
-        return false
+        return styles.null
     }
-    const isSwap = () => {
-        if (index == swapIndex) {
-            return true
+    const barColor = () => {
+        if (index == data.swapIndex) {
+            return styles.swap
         }
-        return false
+        if (index == data.minimumIndex) {
+            return styles.minimum
+        }
+        return styles.null
     }
     return (
-        <div className={`${styles.container} ${isSelected() ? styles.selected : ''} ${isSwap() ? styles.swap : ''}`}>
+        <div className={`${styles.container} ${isSelected()} ${barColor()}`}>
             <div className={styles.bar} style={{height:`${value * 2}%`}} data-value={value}></div>
         </div>
     )
