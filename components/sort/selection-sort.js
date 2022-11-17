@@ -13,17 +13,17 @@ const SelectionSortView = () => {
     //1~50
     const testArray = [1, 5, 9, 22, 4, 6, 8, 3, 7, 11, 15, 20]
     const descriptions = ['配列の最初から最小値（緑）を探し、', '配列の先頭要素（青い）と入れ替えていくことで並べ替える。', '（配列の先頭要素は最小値なら入れ替える動作を行わない）', 'O(n^2)']
-    const code = ['for (let i = 0; i < arrayLength; i++) {',
+    const code = ['for (let i = 0; i < array.length; i++) {',
         '\tlet min = i',
-        '\tfor (let j = i+1; j < arrayLength; j++) {',
-            '\t\tif (sortArray[j] < sortArray[min]) {',
+        '\tfor (let j = i+1; j < array.length; j++) {',
+            '\t\tif (array[j] < array[min]) {',
                 '\t\t\tmin=j',
             '\t\t}',
         '\t}',
         '\tif (min != i) {',
-            '\t\tlet temp = sortArray[i]',
-            '\t\tsortArray[i] = sortArray[min]',
-            '\t\tsortArray[min] = temp',
+            '\t\tlet temp = array[i]',
+            '\t\tarray[i] = array[min]',
+            '\t\tarray[min] = temp',
         '\t}',
     '}']
        
